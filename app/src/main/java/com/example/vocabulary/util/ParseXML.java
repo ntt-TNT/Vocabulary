@@ -1,6 +1,4 @@
-package com.example.wordbook.util;
-
-import android.util.Log;
+package com.example.vocabulary.util;
 
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;

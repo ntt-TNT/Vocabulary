@@ -1,4 +1,4 @@
-package com.example.vocabulary;
+package com.example.vocabulary.Bean;
 
 public class Word {
 
@@ -10,6 +10,8 @@ public class Word {
     private String name;
     private String meaning;
     private String sample;
+
+    public Word(){}
 
     public Word(String name, String meaning, String sample) {
         this.name = name;

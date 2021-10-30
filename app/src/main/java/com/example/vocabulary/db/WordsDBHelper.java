@@ -1,11 +1,12 @@
-package com.example.vocabulary;
+package com.example.vocabulary.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.provider.UserDictionary;
 
 import androidx.annotation.Nullable;
+
+import com.example.vocabulary.Bean.Word;
 
 public class WordsDBHelper extends SQLiteOpenHelper {
     private final static String DATABASE_NAME = "wordsdb";//数据库名字

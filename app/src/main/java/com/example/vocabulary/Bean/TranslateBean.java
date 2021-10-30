@@ -1,4 +1,4 @@
-package com.example.vocabulary;
+package com.example.vocabulary.Bean;
 
 import java.util.List;
 
@@ -116,7 +116,7 @@ public class TranslateBean {
 
         public static class PartsBean {
             private String partName;
-            private List<MeansDTO> means;
+            private List<MeansBean> means;
 
             public String getPartName() {
                 return partName;
@@ -126,15 +126,15 @@ public class TranslateBean {
                 this.partName = partName;
             }
 
-            public List<MeansDTO> getMeans() {
+            public List<MeansBean> getMeans() {
                 return means;
             }
 
-            public void setMeans(List<MeansDTO> means) {
+            public void setMeans(List<MeansBean> means) {
                 this.means = means;
             }
 
-            public static class MeansDTO {
+            public static class MeansBean {
                 private String meanId;
                 private String partId;
                 private String wordMean;

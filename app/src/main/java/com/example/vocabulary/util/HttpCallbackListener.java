@@ -1,4 +1,4 @@
-package com.example.wordbook.util;
+package com.example.vocabulary.util;
 
 import java.io.InputStream;
 

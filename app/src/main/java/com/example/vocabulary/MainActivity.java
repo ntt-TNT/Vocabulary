@@ -6,6 +6,11 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 
+import android.app.Activity;
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,14 +18,17 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
+import android.view.WindowManager;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import com.example.vocabulary.db.WordsDBHelper;
 
 public class MainActivity extends AppCompatActivity {
     WordsDBHelper mDbHelper;
     RadioGroup rg_main;
 
+    public static int screen=0;
 
 
     private static String TAG="LIFE";
@@ -28,13 +36,28 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        setStatusBarTranslucent(MainActivity.this);
         setContentView(R.layout.activity_main);
+        if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
+            Log.d(TAG, "onCreate: 横屏");
+            screen = 1;
 
+        } else if (this.getResources().getConfiguration().orientation ==Configuration.ORIENTATION_PORTRAIT) {
+            Log.d(TAG, "onCreate: 竖屏");
+            screen = 0;
+//            changeFragment(new HomeFragment());
+        }
 
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment,new HomeFragment())
+                .addToBackStack(null)
+                .commit();
 
         mDbHelper = new WordsDBHelper(this);
 
 
+//        Translate translate = new Translate();
+//        Log.d(TAG, "返回json");
         rg_main = findViewById(R.id.rg_main);
         Log.d(TAG, "onCreate: 1");
         rg_main.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -53,9 +76,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        Log.d(TAG, "onDestroy: ");
         mDbHelper.close();
     }
 
@@ -65,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         switch (index)
         {
             case 0:
-                changeFragment(new RightFragment());
+                changeFragment(new HomeFragment());
                 break;
             case 1:
                 changeFragment(new MyFragment());
@@ -81,6 +107,9 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.fragment , fragment);
         transaction.commit();
+
+        FragmentTransaction beginTransaction = getSupportFragmentManager().beginTransaction();
+        beginTransaction.hide(new WordFragment());
     }
 
     @Override
@@ -109,5 +138,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //全屏显示
+    public static void setStatusBarTranslucent(Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            View decorView = activity.getWindow().getDecorView();
+            decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+            activity.getWindow().setStatusBarColor(Color.TRANSPARENT);
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
+    }
 
 }

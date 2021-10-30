@@ -1,3 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 翻译界面编辑框内，内容与边框的边距 -->
+    <dimen name="translate_shape_et_bg_padding">8dp</dimen>
+    <!-- 翻译界面编辑框与父布局的距离 -->
+    <dimen name="translate_et_margin">8dp</dimen>
+    <!-- 翻译界面编辑框高度 -->
+    <dimen name="translate_et_height">120dp</dimen>
+    <!-- 翻译界面自定义翻译按钮内容与边框的距离 -->
+    <dimen name="shape_btn_padding">5dp</dimen>
+
+    <!-- 分割线高度 -->
+    <dimen name="cut_line">0.5dp</dimen>
+
 </resources>

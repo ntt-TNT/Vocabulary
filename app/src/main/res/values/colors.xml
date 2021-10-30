@@ -8,4 +8,19 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="main_rb_font">#2196F3</color>
+
+    <color name="colorPrimary">#ff3300</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="green">#009933</color>
+    <color name="color_fab">#009933</color>
+    <color name="translate_et_hint">#708090</color>
+    <color name="translate_et_background">#F0F0F0</color>
+    <color name="text_color_black">#000000</color>
+    <color name="et_cursor_black">#000000</color>
+    <color name="translate_btn_color">#FFFFFF</color>
+    <color name="translate_line_color">#d7d7d7</color>
+
+    <color name="button_selected_color">#708090</color>
+    <color name="button_normal_color">#FFFFFF</color>
 </resources>

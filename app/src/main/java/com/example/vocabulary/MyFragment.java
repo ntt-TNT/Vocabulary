@@ -2,40 +2,43 @@ package com.example.vocabulary;
 
 //import android.app.Fragment;
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.Gravity;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Filter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.SimpleAdapter;
-import android.widget.TableLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.example.vocabulary.Bean.Word;
+import com.example.vocabulary.db.WordsDBHelper;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
 public class MyFragment extends Fragment {
@@ -44,6 +47,7 @@ public class MyFragment extends Fragment {
     private ListView listView;
     private List<HashMap<String,String>> data = new ArrayList<>();
     SimpleAdapter simpleAdapter;
+    private LinearLayout linearLayout;
 
     private View view;
 
@@ -55,9 +59,6 @@ public class MyFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
     }
 
     @Nullable
@@ -65,6 +66,9 @@ public class MyFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.my_fragment, container, false);
         init(view);
+
+        Log.d(TAG, "onCreateView: ");
+
         return view;
     }
 
@@ -90,12 +94,51 @@ public class MyFragment extends Fragment {
             @Override
             public boolean onQueryTextChange(String newText) {
                 if (!TextUtils.isEmpty(newText)){
-                    Filter filter = simpleAdapter.getFilter();
-                    filter.filter(newText);
+//                    Filter filter = simpleAdapter.getFilter();
+//                    filter.filter(newText);
+                    setWordsListView(searchWords(newText));
                 }else {
                     setWordsListView(data);
                 }
                 return false;
+            }
+        });
+
+        listView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
+            @Override
+            public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+                getActivity().getMenuInflater().inflate(R.menu.word_item_menu, menu);
+            }
+        });
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                TextView strWord = view.findViewById(R.id.word_name);
+                Toast.makeText(getActivity(),strWord.getText().toString(),Toast.LENGTH_LONG).show();
+//                WordFragment wordFragment = WordFragment.newWord(strWord.getText().toString());
+//
+//                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+//
+//                transaction.add(R.id.fragment, wordFragment);
+//
+//                transaction.addToBackStack(null);
+//
+//                transaction.commit();
+
+                if (MainActivity.screen==0){
+                    WordActivity.actionStart(getActivity(),strWord.getText().toString());
+
+                    Intent intent = new Intent(getActivity(),WordActivity.class);
+                    startActivity(intent);
+                }else {
+                    WordFragment wordFragment = WordFragment.newWord(strWord.getText().toString());
+                    FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                    transaction.add(R.id.fragment_land, wordFragment);
+                    transaction.addToBackStack(null);
+                    transaction.commit();
+                }
+
             }
         });
     }
@@ -118,6 +161,8 @@ public class MyFragment extends Fragment {
 
                         InsertUserSql(strWord,strMeaning,strSample,mDbHelper);
 
+                        getAll(mDbHelper);
+                        setWordsListView(data);
                     }
                 })
 
@@ -131,7 +176,40 @@ public class MyFragment extends Fragment {
                 .create()
                 .show();
 
-        setWordsListView(data);
+    }
+
+    public void changeDialog(String strName){
+        this.mDbHelper = mDbHelper;
+        LayoutInflater inflater = getLayoutInflater();
+        final LinearLayout linearLayout = (LinearLayout) inflater.inflate(R.layout.change,null);
+
+        new AlertDialog.Builder(getActivity())
+                .setTitle("修改单词")
+                .setView(linearLayout)
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String strMeaning=((EditText)linearLayout.findViewById(R.id.txtMeaning)).getText().toString();
+                        String strSample=((EditText)linearLayout.findViewById(R.id.txtSample)).getText().toString();
+
+                        ChangeUserSql(strName,strMeaning,strSample,mDbHelper);
+
+                        getAll(mDbHelper);
+                        setWordsListView(data);
+                    }
+                })
+
+                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+
+                .create()
+                .show();
+
+
     }
 
     //使用Sql语句插入单词
@@ -144,7 +222,24 @@ public class MyFragment extends Fragment {
         db.execSQL(sql,new String[]{strWord,strMeaning,strSample});
     }
 
+    //使用Sql语句修改单词
+    private void ChangeUserSql(String strWord, String strMeaning, String strSample, WordsDBHelper mDbHelper){
+        DeleteUserSql(strWord);
+        InsertUserSql(strWord,strMeaning,strSample,mDbHelper);
+    }
+
+    //使用Sql语句删除单词
+    private void DeleteUserSql(String strWord){
+        String sql="delete from Vocabulary where WordName='"+strWord+"'";
+        //Gets the data repository in write mode*/
+
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+        Log.d(TAG, "DeleteUserSql: ");
+        db.execSQL(sql);
+    }
+
     private void getAll(WordsDBHelper mDbHelper){
+        data = new ArrayList<>();
 
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
         Cursor cursor = db.query("Vocabulary",null,null,null,null,null,null);
@@ -176,6 +271,92 @@ public class MyFragment extends Fragment {
 
     }
 
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+//        TextView textId=null;
+        TextView textWord=null;
+        TextView textMeaning=null;
+        TextView textSample=null;
+        AdapterView.AdapterContextMenuInfo info=null;
+        View itemView=null;
+        switch (item.getItemId()){
+            case R.id.action_delete:
+                //删除单词
+                info=(AdapterView.AdapterContextMenuInfo)item.getMenuInfo();
+                itemView=info.targetView;
+                TextView textId =(TextView)itemView.findViewById(R.id.word_name);
+                if(textId!=null){
+                    String strName=textId.getText().toString();
+                    DeleteUserSql(strName);
+                }
+                Toast.makeText(getContext(),"delete",Toast.LENGTH_LONG).show();
+                break;
+            case R.id.action_update:
+                //修改单词
+                info=(AdapterView.AdapterContextMenuInfo)item.getMenuInfo();
+                itemView=info.targetView;
+                TextView textId1 =(TextView)itemView.findViewById(R.id.word_name);
+                if(textId1!=null){
+                    String strName=textId1.getText().toString();
+                    changeDialog(strName);
+                }
+                Toast.makeText(getContext(),"delete",Toast.LENGTH_LONG).show();
+                break;
+        }
+        return true;
+    }
+
+    public List<HashMap<String,String>> searchWords(String key) {
+        List<HashMap<String,String>> list = new ArrayList<>();
+        ArrayList<Word> wordsArrayList = new ArrayList<>();
+        String sql = "SELECT * FROM " + Word.TABLE_NAME + " where WordName like '%"+key+"%'";
+        String sortOrder = Word.COLUMN_NAME_WORD + " DESC";
+        String selection1 = Word.COLUMN_NAME_WORD + " LIKE ?";
+        String selection2 = Word.COLUMN_NAME_MEANING + " LIKE ?";
+        String[] selectionArgs = {"%"+key+"%"};
+        Cursor cursor1;
+        Cursor cursor2;
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+        cursor1 = db.query(Word.TABLE_NAME, null, selection1, selectionArgs, null, null, null);
+        cursor2 = db.query(Word.TABLE_NAME, null, selection2, selectionArgs, null, null, null);
+        //数据库中有
+        if (cursor1.getCount() > 0) {
+            Log.i(TAG,"searchWords:找到"+cursor1.getCount()+"条记录");
+            if (cursor1.moveToFirst()) {
+                do {
+                    HashMap<String,String> map = new HashMap<>();
+                    map.put("word",cursor1.getString(cursor1.getColumnIndex(Word.COLUMN_NAME_WORD)));
+                    map.put("meaning",cursor1.getString(cursor1.getColumnIndex(Word.COLUMN_NAME_MEANING)));
+                    map.put("sample",cursor1.getString(cursor1.getColumnIndex(Word.COLUMN_NAME_SAMPLE)));
+                    list.add(map);
+                } while (cursor1.moveToNext());
+            }
+        } else {
+            Log.d("测试", "数据库中没有");
+        }
+        cursor1.close();
+
+        if (cursor2.getCount() > 0) {
+            Log.i(TAG,"searchWords:找到"+cursor2.getCount()+"条记录");
+            if (cursor2.moveToFirst()) {
+                do {
+                    HashMap<String,String> map = new HashMap<>();
+                    map.put("word",cursor2.getString(cursor2.getColumnIndex(Word.COLUMN_NAME_WORD)));
+                    map.put("meaning",cursor2.getString(cursor2.getColumnIndex(Word.COLUMN_NAME_MEANING)));
+                    map.put("sample",cursor2.getString(cursor2.getColumnIndex(Word.COLUMN_NAME_SAMPLE)));
+                    if (!list.contains(map)){
+                        list.add(map);
+                    }
+
+                } while (cursor2.moveToNext());
+            }
+        } else {
+            Log.d("测试", "数据库中没有");
+        }
+
+        return list;
+    }
 
 
 }
