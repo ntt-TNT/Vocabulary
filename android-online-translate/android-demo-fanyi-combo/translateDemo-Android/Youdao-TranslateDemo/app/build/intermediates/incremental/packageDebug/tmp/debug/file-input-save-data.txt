@@ -1,0 +1,27 @@
+#Internal package file, do not edit.
+#Mon Nov 02 17:26:04 CST 2020
+2.base=/Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/build/intermediates/transforms/mergeJniLibs/debug/0
+5.set=ASSET
+0.path=lib/arm64-v8a/libdict-parser.so
+2.baseType=DIRECTORY
+3.base=/Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+2.set=NATIVE_RESOURCE
+1.path=dict/32160601.ydd
+4.base=/Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/build/intermediates/transforms/dexMerger/debug/0
+count=6
+5.baseType=DIRECTORY
+2.path=lib/armeabi-v7a/libdict-parser.so
+5.base=/Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+4.set=DEX
+3.path=dict/yddict.idx
+3.baseType=DIRECTORY
+1.set=ASSET
+4.path=classes.dex
+1.baseType=DIRECTORY
+5.path=dict/e2160601.ydd
+0.base=/Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/build/intermediates/transforms/mergeJniLibs/debug/0
+0.baseType=DIRECTORY
+3.set=ASSET
+1.base=/Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+4.baseType=DIRECTORY
+0.set=NATIVE_RESOURCE

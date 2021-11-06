@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout-land/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout-port/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/activity_main_land.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/activity_word.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/change.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/home_fragment.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/insert.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/listview_item.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/word_fragment.xml" value="0.17054263565891473" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14_PREVIEW" project-jdk-name="14" project-jdk-type="JavaSDK" />
+</project>

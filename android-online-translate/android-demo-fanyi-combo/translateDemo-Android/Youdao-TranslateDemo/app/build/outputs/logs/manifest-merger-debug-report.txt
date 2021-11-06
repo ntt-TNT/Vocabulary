@@ -1,0 +1,227 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:2:1-73:12
+INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:2:1-73:12
+INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:2:1-73:12
+INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:2:1-73:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0ab1347abdffe0e1c15dc781d661bf4a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/99a29c304b7965c996ad60fc1cf50bd8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/fdb723f2955761f208d3a250bbc0f370/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/ae4f865629c0bab39e9c6ea31a0a5ea0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b21d1a337dec2535780d793ab9d164ad/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8a8849d79706764e204421f8ed975304/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0dcf4337895fa89649d77e815573d583/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/611cd7462a432a9020b196fcfff620bc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/ef2151d11f856c4509c842138f3b6e00/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/bcc5a79fd7bd7d67df895d13afb5a3b4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/3cb81032dbb1f65267a5673c73cb9d18/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/e294773aa7996208ba577eb04d97a865/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/be96e2578d53b5930a7d7e4644390778/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/20eba7288a2e47b667b7b221ac563d15/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bfab06ab4a3f20103ff83c1dcbdfab89/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/76d1a2c7754f721ab0c1634b232f2b41/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/3471882906b68e3345924ebd865c39a3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b755692fed5375e44f4a2d27fede8379/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/c45537da62717c842cf26d472d951ebb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/733d0d2986765f703d47850fb2900a49/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/1d9903656f9814218497d6e8bbd702f3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/6ca287e7548432a6bd6bb813669a0193/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/d5607ffd97893b5becee7a47829235a7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/66684823a7f0bf84f9900504459f5a23/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/eab5dca0373b3f212c94b8b58ea9923e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/4052540fcc564550f1177408674d9064/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:2:1-73:12
+INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:2:1-73:12
+INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:2:1-73:12
+	package
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:3:5-45
+		INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:9:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:11:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:13:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:16:5-75
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:16:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:19:5-81
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:19:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:20:5-80
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:20:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:23:5-71
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:23:22-68
+application
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:25:5-72:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bfab06ab4a3f20103ff83c1dcbdfab89/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bfab06ab4a3f20103ff83c1dcbdfab89/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/76d1a2c7754f721ab0c1634b232f2b41/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/76d1a2c7754f721ab0c1634b232f2b41/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bfab06ab4a3f20103ff83c1dcbdfab89/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:29:9-41
+	android:icon
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:28:9-45
+	android:allowBackup
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:27:9-36
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:26:9-40
+activity#com.youdao.sdk.ydtranslatedemo.MainActivity
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:30:9-39:20
+	android:configChanges
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:32:13-74
+	android:theme
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:33:13-71
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:31:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:34:13-38:29
+action#android.intent.action.MAIN
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:37:27-74
+activity#com.youdao.sdk.ydtranslatedemo.TranslateActivity
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:41:9-43:51
+	android:theme
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:43:13-48
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:42:13-46
+activity#com.youdao.sdk.ydtranslatedemo.TranslateDetailActivity
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:45:9-47:51
+	android:theme
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:47:13-48
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:46:13-52
+activity#com.youdao.sdk.ydtranslatedemo.OcrTranslateActivity
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:49:9-52:51
+	android:configChanges
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:51:13-74
+	android:theme
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:52:13-48
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:50:13-49
+activity#com.youdao.sdk.ydtranslatedemo.MyBrowser
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:54:9-56:51
+	android:theme
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:56:13-48
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:55:13-38
+activity#com.youdao.sdk.ydtranslatedemo.SpeachTranslateDemoActivity
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:58:9-61:51
+	android:configChanges
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:60:13-74
+	android:theme
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:61:13-48
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:59:13-56
+provider#android.support.v4.content.FileProvider
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:63:9-71:20
+	android:grantUriPermissions
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:67:13-47
+	android:authorities
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:65:13-78
+	android:exported
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:66:13-37
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:64:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:68:13-70:58
+	android:resource
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:70:17-55
+	android:name
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml:69:17-67
+uses-sdk
+INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0ab1347abdffe0e1c15dc781d661bf4a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/0ab1347abdffe0e1c15dc781d661bf4a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/99a29c304b7965c996ad60fc1cf50bd8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/99a29c304b7965c996ad60fc1cf50bd8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/fdb723f2955761f208d3a250bbc0f370/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/fdb723f2955761f208d3a250bbc0f370/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/ae4f865629c0bab39e9c6ea31a0a5ea0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/ae4f865629c0bab39e9c6ea31a0a5ea0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b21d1a337dec2535780d793ab9d164ad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/b21d1a337dec2535780d793ab9d164ad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8a8849d79706764e204421f8ed975304/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8a8849d79706764e204421f8ed975304/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0dcf4337895fa89649d77e815573d583/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0dcf4337895fa89649d77e815573d583/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/611cd7462a432a9020b196fcfff620bc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/611cd7462a432a9020b196fcfff620bc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/ef2151d11f856c4509c842138f3b6e00/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/ef2151d11f856c4509c842138f3b6e00/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/bcc5a79fd7bd7d67df895d13afb5a3b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/bcc5a79fd7bd7d67df895d13afb5a3b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/3cb81032dbb1f65267a5673c73cb9d18/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/3cb81032dbb1f65267a5673c73cb9d18/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/e294773aa7996208ba577eb04d97a865/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/e294773aa7996208ba577eb04d97a865/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/be96e2578d53b5930a7d7e4644390778/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/be96e2578d53b5930a7d7e4644390778/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/20eba7288a2e47b667b7b221ac563d15/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/20eba7288a2e47b667b7b221ac563d15/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bfab06ab4a3f20103ff83c1dcbdfab89/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/bfab06ab4a3f20103ff83c1dcbdfab89/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/76d1a2c7754f721ab0c1634b232f2b41/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/76d1a2c7754f721ab0c1634b232f2b41/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/3471882906b68e3345924ebd865c39a3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/3471882906b68e3345924ebd865c39a3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b755692fed5375e44f4a2d27fede8379/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/b755692fed5375e44f4a2d27fede8379/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/c45537da62717c842cf26d472d951ebb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/c45537da62717c842cf26d472d951ebb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/733d0d2986765f703d47850fb2900a49/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/733d0d2986765f703d47850fb2900a49/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/1d9903656f9814218497d6e8bbd702f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/1d9903656f9814218497d6e8bbd702f3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/6ca287e7548432a6bd6bb813669a0193/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/6ca287e7548432a6bd6bb813669a0193/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/d5607ffd97893b5becee7a47829235a7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/d5607ffd97893b5becee7a47829235a7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/66684823a7f0bf84f9900504459f5a23/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/66684823a7f0bf84f9900504459f5a23/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/eab5dca0373b3f212c94b8b58ea9923e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/eab5dca0373b3f212c94b8b58ea9923e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/4052540fcc564550f1177408674d9064/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/liujiayu/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/4052540fcc564550f1177408674d9064/AndroidManifest.xml:20:5-44
+INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+		ADDED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liujiayu/Downloads/translateDemo-Android 3/Youdao-TranslateDemo/app/src/main/AndroidManifest.xml

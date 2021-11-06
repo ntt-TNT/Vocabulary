@@ -29,7 +29,7 @@
             android:configChanges="orientation|keyboardHidden"
             android:exported="true"
             android:screenOrientation="sensor"
-            android:theme="@style/FullScreen">
+            android:theme="@style/Theme.Vocabulary">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
