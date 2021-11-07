@@ -36,6 +36,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:authorities="com.example.vocabulary.mContentProvider"
+            android:exported="true"
+            android:name="mContentProvider"/>
     </application>
 
 </manifest>

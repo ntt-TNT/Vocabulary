@@ -11,6 +11,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -54,7 +55,7 @@ public class MyFragment extends Fragment {
 
     WordsDBHelper mDbHelper;
 
-
+    Uri wordsUri = Uri.parse("content://com.example.vocabulary.mContentProvider/Vocabulary");
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -80,7 +81,7 @@ public class MyFragment extends Fragment {
 //        listView.setVisibility(View.GONE);//设置listview先不可见
         searchView = view.findViewById(R.id.search);
 
-        getAll(mDbHelper);
+        getAll(mDbHelper,view);
         setWordsListView(data);
 
         searchView.setIconified(false);
@@ -176,6 +177,7 @@ public class MyFragment extends Fragment {
                 .create()
                 .show();
 
+//        getAll(mDbHelper,view);
     }
 
     public void changeDialog(String strName){
@@ -236,6 +238,29 @@ public class MyFragment extends Fragment {
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
         Log.d(TAG, "DeleteUserSql: ");
         db.execSQL(sql);
+    }
+
+    private void getAll(WordsDBHelper mDbHelper,View view){
+        data = new ArrayList<>();
+
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+        Cursor cursor = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            cursor = view.getContext().getContentResolver().query(wordsUri,null,null,null);
+        }else{
+            throw new RuntimeException("SDK 版本过低");
+        }
+//                db.query("Vocabulary",null,null,null,null,null,null);
+        if (cursor.moveToFirst()){
+            do {
+                HashMap<String,String> map = new HashMap<>();
+                map.put("word",cursor.getString(cursor.getColumnIndex(Word.COLUMN_NAME_WORD)));
+                map.put("meaning",cursor.getString(cursor.getColumnIndex(Word.COLUMN_NAME_MEANING)));
+                map.put("sample",cursor.getString(cursor.getColumnIndex(Word.COLUMN_NAME_SAMPLE)));
+                data.add(map);
+            }while (cursor.moveToNext());
+        }
+        cursor.close();
     }
 
     private void getAll(WordsDBHelper mDbHelper){
